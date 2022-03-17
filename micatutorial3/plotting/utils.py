@@ -48,3 +48,23 @@ def plot_primes(numbers, figsize=8, **kwargs):
     plt.scatter(x, y, **kwargs)
     plt.show()
 
+
+
+def plot_primes_simple(numbers, **kwargs):
+    ''' Plot Prime numbers.
+    
+    Parameters
+    ----------
+    numbers : list
+        Sequence of prime numbers.
+
+    kwargs:
+        Additional keyword arguments are passed to `plt.scatter`
+        
+    '''
+    
+    plt.scatter(range(len(numbers)), numbers, **kwargs)
+    plt.xlabel('Rank')
+    plt.ylabel('Value')
+    
+
